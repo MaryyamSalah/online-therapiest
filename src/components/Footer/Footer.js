@@ -12,7 +12,7 @@ function Footer() {
       <footer className="bg-gray-100 w-full">
         <div className="flex flex-row ">
           <div className="flex flex-col px-20 py-16">
-      <h1 className="text-2xl font-bold ">Subscribe</h1>
+      <h1 className="text-2xl font-bold text-left ">Subscribe</h1>
       <h6 className="text-slate-400 text-2xs py-4">you will never be spam or enter your email</h6>
       <div className="flex flex-row">
       <input
