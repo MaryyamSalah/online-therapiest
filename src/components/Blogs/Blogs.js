@@ -3,7 +3,14 @@ import React from "react";
 function Blogs() {
   return (
     <div>
-      <h1>Blogs</h1>
+      <div className="flex flex-col">
+        <div>
+          
+        </div>
+
+
+
+      </div>
      
     </div>
   );
