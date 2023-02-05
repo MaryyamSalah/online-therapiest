@@ -1,9 +1,11 @@
 import React from "react";
+import RecentBlogs from "./recentBlogs";
   
 function Home() {
   return (
     <div>
-      <h1>home</h1>
+      <h1>welcome to home</h1>
+      <RecentBlogs />
      
     </div>
   );
