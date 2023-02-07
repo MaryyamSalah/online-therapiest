@@ -1,6 +1,7 @@
 import React , {useEffect,useState} from "react";
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from "../../firebaseConfig";
+import { Link } from "react-router-dom";
   
 function RecentBlogs() {
     const [blogs , setBlog] = useState([]);
@@ -17,15 +18,21 @@ function RecentBlogs() {
     <div>
       <h1>recent home</h1>
 <div className="flex mx-24">
+  
       {blogs.map((blog)=>{
         return(
-          <div className="px-4 py-12"
-          key={blog.id}>
-            <img src= {blog.ImgText}
-      alt="first image" className=" max-w-xs hover:scale-110 transition duration-300 ease-in-out" />
-
-
-          </div>
+          <div
+          className="object-cover h-60 w-96 rounded-lg mr-3 mb-4 "
+          key={blog.id}
+        >
+          <Link to={`/blogs/${blog.id}`}>
+            <img
+              src={blog.ImgText}
+              alt=""
+              className="h-38 w-96 rounded-lg hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </Link>
+        </div>
 
         )
       })}
